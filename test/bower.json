@@ -1,5 +1,5 @@
 {
-  "name": "github-lang-colours",
+  "name": "glc",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",
