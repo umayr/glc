@@ -1,4 +1,5 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
 // bower:scss
 // endbower
 
@@ -11,47 +12,59 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .colours {
-  padding-top: 20px;
+
+  .intro {
+    height: 200px;
+    width: 30%;
+    background: #000;
+    display: inline-block;
+    float: left;
+    color: darken(#FFF , 10%);
+
+    h1 {
+      padding: 80px 15px 0 0;
+      margin: 0;
+      font-size: 2.4em;
+      text-align: right;
+    }
+
+  }
   .colour {
-    a {
-      color: #333;
+    display: inline-block;
+    float: left;
+    height: 100px;
+    width: 10%;
+    cursor: pointer;
+    .shadow {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      &:hover {
+        background: transparent;
+        box-shadow: 0 0 50px #000;
+        position: relative;
+        z-index: 1000;
+        p {
+          color: #FFF;
+        }
+      }
+      transition: background 0.25s ease-in;
+      p {
+        padding: 0;
+        margin: 0;
+
+        color: darken(#FFF, 50%);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+        font-size: 14px;
+        line-height: 170px;
+        text-indent: 7px;
+      }
     }
-    .circle {
-      $size: 12px;
-
-      height: $size;
-      width: $size;
-      border-radius: $size;
-      display: inline-block;
-      margin-right: $size - 4;
-    }
   }
-}
-
-.large-display {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  top: 0;
-  left: 0;
-  color: #FFF;
-  h1 {
-    align-self: center;
-  }
-  .hide {
-    display: none;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
 }
