@@ -1,0 +1,1 @@
+!function(){"use strict";$(function(){$.getJSON("scripts/colours.json",function(b){for(var c in b)b.hasOwnProperty(c)&&a(c,b[c])})});var a=function(a,b){var c=$("<p />").text(a),d=$("<div />").addClass("shadow").append(c),e=$("<div />").addClass("colour").css("background-color",b).append(d);e.appendTo(".colours")}}();
