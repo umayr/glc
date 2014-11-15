@@ -1,5 +1,9 @@
 {
-  "name": "glc",
+  "name": "Github Language Colours",
+    "version" : "0.0.1",
+    "description": "Small page to display colours used by github for different Language identification.",
+    "keywords" :"github, language, colours, html5",
+    "homepage" : "https://github.com/umayr/github-lang-colours",
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "grunt": "^0.4.5",
